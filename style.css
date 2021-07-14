@@ -212,6 +212,7 @@ input[type="submit"] {
   width: 90%;
   border: none;
   border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
 }
 /*-----------Contact Section End--- */
 /* ------------------------------- */
