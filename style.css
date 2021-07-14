@@ -302,7 +302,7 @@ input[type="submit"] {
   #contact .container {
     padding: 50px 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
   }
   #contact .container .btn {
     padding: 10px 20px;
@@ -383,14 +383,10 @@ input[type="submit"] {
   #contact .container {
     padding: 30px 15px;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px;
+    grid-gap: 25px;
   }
   #contact .container .btn {
     padding: 10px 20px;
-  }
-  #contact .container input[type="email"],
-  input[type="submit"] {
-    width: 100%;
   }
   /* Media For Mobile Contact */
 
