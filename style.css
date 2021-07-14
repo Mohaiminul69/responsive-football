@@ -69,6 +69,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  padding: 20px;
 }
 #banner .container .banner-left {
   font-size: 60px;
@@ -269,9 +270,62 @@ input[type="submit"] {
 /*----------- Key Frames End--- */
 /* -------------------- */
 
+/*-----------Media For Table Start--- */
+/* -------------------- */
+@media (max-width: 992px) {
+  /* Media For Tablet Banner */
+  #banner .container .banner-left h1 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+  /* Media For Tablet Banner */
+
+  /* Media For Tablet Gallary */
+  #gallary .players {
+    padding: 50px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Media For Tablet Gallary */
+
+  /* Media For Tablet about */
+  #about .container {
+    padding: 50px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about .container .about-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Media For Tablet about */
+
+  /* Media For Tablet Contact */
+  #contact .container {
+    padding: 50px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  #contact .container .btn {
+    padding: 10px 20px;
+  }
+  #contact .container input[type="email"],
+  input[type="submit"] {
+    width: 100%;
+  }
+  /* Media For Tablet Contact */
+
+  /* Media For Tablet Footer */
+  #footer .container {
+    padding: 50px 0;
+  }
+  /* Media For Tablet Footer */
+}
+/*-----------Media For Table End--- */
+/* -------------------- */
+
 /*-----------Media For Mobile Start--- */
 /* -------------------- */
 @media (max-width: 688px) {
+  /* Media For Mobile Banner */
   #banner .container {
     align-items: center;
     justify-content: center;
@@ -280,20 +334,19 @@ input[type="submit"] {
     padding: 0 15px;
   }
   #banner .container .banner-left {
-    font-size: 30px;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   #banner .container .banner-left h1 {
-    font-size: 32px;
+    font-size: 38px;
     color: white;
-    line-height: 40px;
-    margin-bottom: 10px;
+    line-height: 54px;
+    margin-bottom: 16px;
   }
   #banner .container .banner-left .btn {
-    font-size: 12px;
+    font-size: 16px;
   }
   #banner .container .banner-right {
     height: 100%;
@@ -304,6 +357,7 @@ input[type="submit"] {
     width: 100%;
     height: 80%;
   }
+  /* Media For Mobile Banner */
   /* Media For Mobile Gallary */
   #gallary .players {
     padding: 30px 15px;
@@ -312,20 +366,6 @@ input[type="submit"] {
     grid-gap: 20px;
   }
   /* Media For Mobile Gallary */
-
-  /* Media For Mobile Contact */
-  #contact .container {
-    padding: 30px 15px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #contact .container .btn {
-    padding: 10px 20px;
-  }
-  #contact .container input[type="email"],
-  input[type="submit"] {
-    width: 100%;
-  }
-  /* Media For Mobile Contact */
 
   /* Media For Mobile about */
   #about .container {
@@ -338,6 +378,21 @@ input[type="submit"] {
     grid-gap: 20px;
   }
   /* Media For Mobile about */
+
+  /* Media For Mobile Contact */
+  #contact .container {
+    padding: 30px 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+  #contact .container .btn {
+    padding: 10px 20px;
+  }
+  #contact .container input[type="email"],
+  input[type="submit"] {
+    width: 100%;
+  }
+  /* Media For Mobile Contact */
 
   /* Media For Mobile Footer */
   #footer .container {
