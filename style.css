@@ -248,10 +248,13 @@ a {
     justify-content: center;
   }
   #banner .container .banner-left h1 {
-    font-size: 30px;
+    font-size: 32px;
     color: white;
     line-height: 40px;
     margin-bottom: 10px;
+  }
+  #banner .container .banner-left .btn {
+    font-size: 12px;
   }
   #banner .container .banner-right {
     height: 100%;
