@@ -211,7 +211,7 @@ input[type="submit"] {
   outline: none;
   width: 90%;
   border: none;
-  border-radius: none !important;
+  border-radius: 0 !important;
 }
 /*-----------Contact Section End--- */
 /* ------------------------------- */
