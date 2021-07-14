@@ -229,3 +229,68 @@ a {
 }
 /*----------- Key Frames End--- */
 /* -------------------- */
+
+/*-----------Media For Mobile Start--- */
+/* -------------------- */
+@media (max-width: 688px) {
+  #banner .container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 15px;
+  }
+  #banner .container .banner-left {
+    font-size: 30px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #banner .container .banner-left h1 {
+    font-size: 30px;
+    color: white;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  #banner .container .banner-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #banner .container .banner-right img {
+    width: 100%;
+    height: 80%;
+  }
+  /* Media For Mobile Gallary */
+  #gallary .players {
+    padding: 30px 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  /* Media For Mobile Gallary */
+
+  /* Media For Mobile Contact */
+  #contact .container {
+    padding: 30px 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .container .contact-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  /* Media For Mobile Contact */
+
+  /* Media For Mobile Footer */
+  #footer .container {
+    padding: 30px 0;
+  }
+  #footer .container img {
+    width: 280px;
+  }
+  /* Media For Mobile Footer */
+}
+/*-----------Media For Mobile End--- */
+/* -------------------- */
