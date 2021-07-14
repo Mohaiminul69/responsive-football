@@ -1,5 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*----------- Utilities Start--- */
+/* -------------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.btn {
+  background: #e02c6d;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  width: fit-content;
+}
+.btn i {
+  margin-left: 12px;
+}
+/*----------- Utilities End--- */
+/* -------------------- */
+
+/*----------- Banner Start--- */
+/* -------------------- */
+#banner {
+  background: #2d25a0;
+}
+#banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+#banner .container .banner-left {
+  font-size: 60px;
+  width: 100%;
+}
+#banner .container .banner-left h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 18px;
+}
+#banner .container .banner-right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#banner .container .banner-right img {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------- Banner End--- */
+/* -------------------- */
