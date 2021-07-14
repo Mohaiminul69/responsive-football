@@ -20,6 +20,7 @@ body {
   padding: 10px 30px;
   padding-right: 50px;
   font-size: 20px;
+  cursor: pointer;
   font-weight: 700;
   text-decoration: none;
   color: white;
@@ -29,6 +30,10 @@ body {
   text-transform: capitalize;
   width: fit-content;
   position: relative;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #333;
 }
 .btn i {
   position: absolute;
@@ -56,7 +61,7 @@ a {
 }
 #banner:hover .btn i {
   color: #0f0e27;
-  animation: float 2s linear infinite;
+  animation: float 1s linear infinite;
   transition: 0.2s ease-in-out;
 }
 #banner .container {
@@ -115,64 +120,98 @@ a {
 /*----------- Gallary Section End--- */
 /* ------------------------------- */
 
-/*----------- Contact Section Start--- */
+/*----------- about Section Start--- */
 /* ------------------------------- */
-#contact {
+#about {
   background: #18191f;
 }
-#contact .container {
+#about .container {
   padding: 80px 50px;
   display: grid;
   grid-template-columns: 1.5fr 4fr;
   grid-gap: 20px;
 }
-#contact .container .contact-left {
-  padding: 10px;
-  padding-right: 20px;
-  background: white;
+#about .container .about-left {
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
 }
-#contact .container .contact-left img {
-  margin-bottom: 20px;
+#about .container .about-left img {
+  height: 100%;
+  object-fit: cover;
 }
-#contact .container .contact-left .contact-info .contact {
-  display: flex;
-  color: grey;
-  font-size: 17px;
-  margin-bottom: 20px;
-}
-#contact .container .contact-left .contact-info .contact i {
-  margin-right: 10px;
-  color: #e02c6d;
-  font-size: 20px;
-}
-#contact .container .contact-right {
+#about .container .about-right {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
-#contact .container .contact-right .more-info {
+#about .container .about-right .more-info {
   padding: 20px 0 0 20px;
 }
-#contact .container .contact-right .more-info h3 {
+#about .container .about-right .more-info h3 {
   color: white;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-#contact .container .contact-right .more-info li {
+#about .container .about-right .more-info li {
   margin-bottom: 10px;
 }
-#contact .container .contact-right .more-info li a {
+#about .container .about-right .more-info li a {
   color: grey;
   font-size: 14px;
   text-transform: capitalize;
 }
-#contact .container .contact-right .more-info li a:hover {
+#about .container .about-right .more-info li a:hover {
   color: #e02c6d;
 }
-/*----------- Contact Section End--- */
+/*----------- about Section End--- */
+/* ------------------------------- */
+
+/*-----------Contact Section Start--- */
+/* ------------------------------- */
+#contact .container {
+  padding: 80px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  color: grey;
+}
+#contact .container .contact-div img,
+#contact .container .contact-div p,
+#contact .container .contact-div h2 {
+  margin-bottom: 20px;
+}
+#contact .container .contact-div h2 {
+  color: #e02c6d;
+}
+#contact .container .contact-div .list li {
+  margin-bottom: 10px;
+}
+#contact .container .contact-div .list a {
+  color: grey;
+}
+#contact .container .contact-div .list a:hover {
+  color: #e02c6d;
+}
+#contact .container .btn {
+  padding: 10px 20px;
+}
+#contact .container div h3 p {
+  margin-bottom: 8px;
+}
+#contact .container input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+input[type="submit"] {
+  outline: none;
+  width: 90%;
+  border: none;
+}
+/*-----------Contact Section End--- */
 /* ------------------------------- */
 
 /*----------- Footer Section Start--- */
@@ -279,12 +318,26 @@ a {
     padding: 30px 15px;
     grid-template-columns: repeat(1, 1fr);
   }
-  #contact .container .contact-right {
+  #contact .container .btn {
+    padding: 10px 20px;
+  }
+  #contact .container input[type="email"],
+  input[type="submit"] {
+    width: 100%;
+  }
+  /* Media For Mobile Contact */
+
+  /* Media For Mobile about */
+  #about .container {
+    padding: 30px 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #about .container .about-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-  /* Media For Mobile Contact */
+  /* Media For Mobile about */
 
   /* Media For Mobile Footer */
   #footer .container {
