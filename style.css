@@ -281,13 +281,20 @@ input[type="submit"] {
 /*-----------Media For Table Start--- */
 /* -------------------- */
 @media (max-width: 1026px) {
-  /* Media For Tablet Banner */
+  /* Media For Tablet iPad Pro Banner */
   #banner .container .banner-left h1 {
     font-size: 44px;
     line-height: 60px;
     margin-bottom: 20px;
   }
-  /* Media For Tablet Banner */
+  /* Media For Tablet iPad Pro Banner */
+
+  /* Media For Tablet iPad Pro Gallary */
+  #gallary .players {
+    padding: 50px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Media For Tablet iPad Pro Gallary */
 }
 @media (max-width: 996px) {
   /* Media For Tablet Banner */
@@ -300,13 +307,6 @@ input[type="submit"] {
     max-width: 60%;
   }
   /* Media For Tablet Banner */
-
-  /* Media For Tablet Gallary */
-  #gallary .players {
-    padding: 50px 20px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  /* Media For Tablet Gallary */
 
   /* Media For Tablet about */
   #about .container {
