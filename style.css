@@ -40,6 +40,12 @@ img {
   width: 100%;
   object-fit: cover;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 /*----------- Utilities End--- */
 /* -------------------- */
 
@@ -49,9 +55,9 @@ img {
   background: #0f0e27;
 }
 #banner:hover .btn i {
-  transition: 0.3s ease-in-out;
   color: #0f0e27;
   animation: float 2s linear infinite;
+  transition: 0.2s ease-in-out;
 }
 #banner .container {
   display: flex;
@@ -107,6 +113,66 @@ img {
   color: #6c6c6c;
 }
 /*----------- Gallary Section End--- */
+/* ------------------------------- */
+
+/*----------- Contact Section Start--- */
+/* ------------------------------- */
+#contact {
+  background: #18191f;
+}
+#contact .container {
+  padding: 80px 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  grid-gap: 20px;
+}
+#contact .container .contact-left {
+  padding: 10px;
+  padding-right: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+#contact .container .contact-left img {
+  margin-bottom: 20px;
+}
+#contact .container .contact-left .contact-info .contact {
+  display: flex;
+  color: grey;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+#contact .container .contact-left .contact-info .contact i {
+  margin-right: 10px;
+  color: #e02c6d;
+  font-size: 20px;
+}
+#contact .container .contact-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+#contact .container .contact-right .more-info {
+  padding: 20px 0 0 20px;
+}
+#contact .container .contact-right .more-info h3 {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#contact .container .contact-right .more-info li {
+  margin-bottom: 10px;
+}
+#contact .container .contact-right .more-info li a {
+  color: grey;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+#contact .container .contact-right .more-info li a:hover {
+  color: #e02c6d;
+}
+/*----------- Contact Section End--- */
 /* ------------------------------- */
 
 /*----------- Footer Section Start--- */
