@@ -17,7 +17,8 @@ body {
 }
 .btn {
   background: #e02c6d;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  padding-right: 50px;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -27,9 +28,17 @@ body {
   align-items: center;
   text-transform: capitalize;
   width: fit-content;
+  position: relative;
 }
 .btn i {
-  margin-left: 12px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+}
+img {
+  width: 100%;
+  object-fit: cover;
 }
 /*----------- Utilities End--- */
 /* -------------------- */
@@ -37,7 +46,12 @@ body {
 /*----------- Banner Start--- */
 /* -------------------- */
 #banner {
-  background: #2d25a0;
+  background: #0f0e27;
+}
+#banner:hover .btn i {
+  transition: 0.3s ease-in-out;
+  color: #0f0e27;
+  animation: float 2s linear infinite;
 }
 #banner .container {
   display: flex;
@@ -52,7 +66,8 @@ body {
 #banner .container .banner-left h1 {
   font-size: 60px;
   color: white;
-  margin-bottom: 18px;
+  line-height: 80px;
+  margin-bottom: 20px;
 }
 #banner .container .banner-right {
   height: 100%;
@@ -60,9 +75,91 @@ body {
   justify-content: flex-end;
 }
 #banner .container .banner-right img {
-  width: 70%;
+  width: 85%;
   height: 100%;
   object-fit: contain;
 }
 /*----------- Banner End--- */
+/* -------------------- */
+
+/*----------- Gallary Section Start--- */
+/* ------------------------------- */
+#gallary .players {
+  padding: 80px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+#gallary .players .player {
+  padding: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+#gallary .players .player h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin: 16px 0;
+  color: #18191f;
+}
+#gallary .players .player p {
+  margin-bottom: 16px;
+  line-height: 26px;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+/*----------- Gallary Section End--- */
+/* ------------------------------- */
+
+/*----------- Footer Section Start--- */
+/* ------------------------------- */
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+#footer .container img {
+  width: 400px;
+}
+#footer .container ul {
+  display: flex;
+  list-style: none;
+  margin: 30px 0;
+}
+#footer .container li {
+  margin: 0 8px;
+}
+#footer .container li a {
+  color: #969bab;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(11, 13, 23, 0.1);
+}
+#footer .container p {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+/*----------- Footer Section End--- */
+/* ------------------------------- */
+
+/*----------- Key Frames Start--- */
+/* -------------------- */
+@keyframes float {
+  0% {
+    right: 20px;
+  }
+  50% {
+    right: 16px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+/*----------- Key Frames End--- */
 /* -------------------- */
