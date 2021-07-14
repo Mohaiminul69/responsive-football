@@ -72,11 +72,10 @@ a {
   padding: 20px;
 }
 #banner .container .banner-left {
-  font-size: 60px;
   width: 100%;
 }
 #banner .container .banner-left h1 {
-  font-size: 60px;
+  font-size: 58px;
   color: white;
   line-height: 80px;
   margin-bottom: 20px;
@@ -178,10 +177,14 @@ a {
   grid-gap: 20px;
   color: grey;
 }
+#contact .container .contact-div img {
+  width: 90%;
+}
 #contact .container .contact-div img,
 #contact .container .contact-div p,
 #contact .container .contact-div h2 {
   margin-bottom: 20px;
+  line-height: 24px;
 }
 #contact .container .contact-div h2 {
   color: #e02c6d;
@@ -197,9 +200,6 @@ a {
 }
 #contact .container .btn {
   padding: 10px 20px;
-}
-#contact .container div h3 p {
-  margin-bottom: 8px;
 }
 #contact .container input[type="email"] {
   width: 90%;
@@ -245,6 +245,11 @@ input[type="submit"] {
   place-items: center;
   border-radius: 50%;
   background: rgba(11, 13, 23, 0.1);
+  transition: 0.3s ease-in-out;
+}
+#footer .container li a:hover {
+  color: white;
+  background: rgba(11, 13, 23, 0.9);
 }
 #footer .container p {
   text-transform: capitalize;
@@ -272,12 +277,24 @@ input[type="submit"] {
 
 /*-----------Media For Table Start--- */
 /* -------------------- */
-@media (max-width: 992px) {
+@media (max-width: 1026px) {
   /* Media For Tablet Banner */
   #banner .container .banner-left h1 {
-    font-size: 42px;
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  /* Media For Tablet Banner */
+}
+@media (max-width: 996px) {
+  /* Media For Tablet Banner */
+  #banner .container .banner-left h1 {
+    font-size: 38px;
     line-height: 50px;
     margin-bottom: 15px;
+  }
+  #banner .container .banner-right {
+    max-width: 60%;
   }
   /* Media For Tablet Banner */
 
@@ -324,7 +341,7 @@ input[type="submit"] {
 
 /*-----------Media For Mobile Start--- */
 /* -------------------- */
-@media (max-width: 688px) {
+@media (max-width: 690px) {
   /* Media For Mobile Banner */
   #banner .container {
     align-items: center;
@@ -350,6 +367,7 @@ input[type="submit"] {
   }
   #banner .container .banner-right {
     height: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
   }
